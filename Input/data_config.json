@@ -1,0 +1,24 @@
+{
+	"product": "Doordash",
+	"version": "1",
+	"encode_columns": ["market_id", "order_protocol"] ,
+        "timestamp_columns": ["created_at", "actual_delivery_time"],
+	"hash_columns": ["store_id", "store_primary_category"],
+	"scale_columns": ["total_items", 
+                              "subtotal", 
+                              "num_distinct_items", 
+                              "min_item_price", 
+                              "max_item_price", 
+                              "total_onshift_dashers", 
+                              "total_busy_dashers", 
+                              "total_outstanding_orders",
+                              "estimated_order_place_duration",
+                              "estimated_store_to_consumer_driving_duration"
+                             ],
+        "categorical_columns": ["market_id", 
+                              "order_protocol", 
+                              "store_id", 
+                              "store_primary_category"
+                             ],
+        "label": ["order_time"]
+}
