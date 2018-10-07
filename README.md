@@ -7,3 +7,6 @@ The whole module is configured in a docker container which predicts the estimate
 * Fractional Stratification
 * DataBricks
 * Docker
+
+Execution Command:
+docker build -t estimated-time-arrival . && docker run -v $(pwd)/Output:/app/Output -it estimated-time-arrival
